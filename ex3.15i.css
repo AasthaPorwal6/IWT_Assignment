@@ -1,0 +1,36 @@
+
+.image{
+    height:100%;
+width:100%;
+background-color: rgb(5, 247, 247);
+background-image: url(images/39.jpg);
+background-size:cover;
+background-image:linear-gradient(to top ,transparent,rgb(255, 143, 0,0.5)),url(images/39.jpg);
+}
+h1{font-weight:bold;
+font-size:30px ;
+color: rgb(4, 51, 104);
+
+
+}
+h2{font-weight:bold;
+font-size:20px ;
+color: rgb(16, 57, 104);
+
+
+}
+
+#h{
+background-color: rgb(243, 252, 2);
+}
+#b{
+font-weight:bold;
+color:#010f0f;
+}
+p{
+font-weight:bold;
+font-size:15px ;
+color: rgb(3, 108, 17); 
+line-height: 4.5em;
+}
+

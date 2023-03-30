@@ -1,0 +1,66 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            INPUT
+        <input onChange="convert()" type="text" placeholder="enter temp">
+        <select onChange="convert()">
+            <option value="k">KELVIN</option>
+            <option value="c"> CELCIUS</option>
+            <option value="f">FAHARENITE</option>
+        </select>
+        <input type="text" > Output
+        <select onChange="convert()">
+            <option value="k">KELVIN</option>
+            <option value="c"> CELCIUS</option>
+            <option value="f">FAHARENITE</option>
+        </select>
+       
+    </form>
+    <!--<button onClick='convert()'>Convert</button>-->
+        <script>
+        
+         
+
+        function convert()
+        {
+            input=parseFloat(document.forms[0].elements[0].value);
+            inop=document.forms[0].elements[1].value;
+            otop=document.forms[0].elements[3].value;
+            
+            if(inop=='c'&& otop=='k')
+            {
+                result=input+273;
+            }
+            else if (inop=='c'&& otop=='f')
+            {
+                result=input*9/5+32;
+            }
+            else if (inop=='f'&& otop=='c')e
+            {
+                result=input-32*5/9;
+            }
+            else if (inop=='f'&& otop=='k')
+            {
+                result=input-32*5/9+273.15;
+            }
+            else if (inop=='k'&& otop=='c')
+            {
+                result=input-273;
+            }
+            else if (inop=='k'&& otop=='f')
+            {
+                result=input-273.15*9/5;
+            }
+            else{
+                result=0;
+            }
+
+            document.forms[0].elements[2].value=result;
+
+        }
+    </script>
+    </body>
+</html>

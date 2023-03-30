@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Dom</title>
+</head>
+<body>
+    <button onclick="genText()"> Click it</button>
+    <script>
+        function genText()
+        {
+            d=new Date();
+            hr=d.getHours();
+           
+            
+            
+            fname=prompt("Enter the fname");
+            lname=prompt("Enter the lname");
+            
+            if (hr<=12)
+                greet="good morning";
+            else if(hr<17)
+                greet="good afternoon";
+            else
+                greet="good evening ";
+            document.write(greet+" "+fname+ " " +lname);
+        }
+       
+    </script>
+</body>
+</html>

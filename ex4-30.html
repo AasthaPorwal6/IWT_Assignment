@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess </title>
+	<style>
+		*{
+			background-color:rgb(215, 215, 255);
+		}
+		button{
+			
+			background-color: rgb(234, 8, 222);
+			border: solid black 2px;
+			align-items: center;
+			
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Guess a number between 1 and 1000:</h1>
+	<input type="text" id="guess">
+	<button type="button" onclick="validate()">Submit</button>
+	<script >
+		var rm = Math.floor(Math.random() * 1000) + 1;
+		
+		function validate()
+		{ guess = document.getElementById("guess").value;
+			if(Math.round(guess)==guess)
+			{
+				checkGuess();
+
+			}
+			else{
+				alert("invalid input try again")
+			}
+		}
+		function checkGuess() {
+			var guess = parseInt(document.getElementById("guess").value);
+
+
+			
+			if (guess == rm) {
+				alert("Congratulations.");
+				
+				
+			} else if (guess < rm) {
+				alert("Too low. Try again.");
+				
+			} else {
+				alert("Too high. Try again.");
+				
+			}
+		}
+	</script>
+</body>
+</html>

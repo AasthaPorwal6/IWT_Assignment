@@ -1,0 +1,61 @@
+<!--- 9.Create a user feedback page which asks questions
+ about a software product. You are required to use checkbox, 
+ radio buttons, and drop-down, textarea and various text input
+type for this. Structure the web page using HTML table.
+   -->
+<html>
+   <head><title>Feedback form</title>  </head>
+   <body> 
+        <caption> Feedback Form</caption>
+       <table border=0>
+            <form method=get autofill="on" > 
+               <td> <label> USERNAME </label>   </td>
+               <td> <input type=text  name=uname /></td>
+           </tr>
+           <tr> 
+               <td> <label> Password</label> </td>
+               <td>  <input type=password  name=pass  required /></td>
+           </tr>
+           <tr>
+               <td> <label>Which type of the Software product you prefer?  </label></td>
+               <td> <input type =radio name=product  value =tech/> Generic product <br>
+                    <input  type =radio name=product  value =b/> Customised Product <br>
+                </td>	
+            </tr>
+            <tr>
+                <td>
+                    <label>What all characterics would you prefer in  your product ?  </label></td>
+                </td>
+                <td>
+                    <input type =checkbox name=char value =eff/> Efficiency <br>
+                    <input type =checkbox name=char value =man/> Maintainability <br>
+                    <input type =checkbox name=char value =dep/> Dependability <br>
+                    <input type =checkbox name=char value =ada/> Adaptability <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label>How would you like you to customized your product </label>
+                <textarea name="text" > </textarea>
+            </tr>
+		<tr>
+			<td> What are your opinionsabout it ?</td>
+			<td> 
+				<select>
+					<option>GOOD </option>
+					<option>BEST </option>
+					<option> Exellence</option>
+				</select>
+					
+					
+		</tr>
+           <tr>
+               <td> <input type = submit  value ="register"/> </td> 
+           </tr>
+           <tr>
+                <td> <input type = reset value ="clear"/> </td> 
+           </tr>
+          
+            </form>
+       </table>
+   </body>
+</html>

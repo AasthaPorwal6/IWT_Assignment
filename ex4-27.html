@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: aqua;
+            }
+            #clock{
+                background-color: rgb(255, 194, 255);
+                text-align: center;
+                font-size: larger;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="clock"> </div>
+        <script>
+           function clock()
+           {
+           d=new Date();
+            hh=d.getHours();
+            mm=d.getMinutes();
+            ss=d.getSeconds();
+            if(ss>=10)
+                cTime=hh+":"+mm+":"+ss;
+            else
+                cTime=hh+":"+mm+":0"+ss;
+            
+     
+            block=document.getElementById('clock');
+            block.innerHTML=cTime;
+           }
+           setInterval(clock,1000);
+        </script>
+    </body>
+</html>
